@@ -1,9 +1,64 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>programa</ion-title>
-  </ion-toolbar>
+  <div class="barra-verde"></div>
+  <div class="barra-gris"></div>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row class="primera-columna">
+      <ion-col class="columna">
+          <ion-img src="./assets/images/General_b.png" style="height: 100px"></ion-img>
+          <p class="texto-columna">General</p>
+      </ion-col>
+
+      <ion-col>
+          <ion-img src="./assets/images/Coloquio.png" style="height: 100px"></ion-img>
+          <p class="texto-columna">Coloquio</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <ion-img src="./assets/images/Conferencias.png" style="height: 100px"></ion-img>
+          <p class="texto-columna">Conferencias</p>
+      </ion-col>
+
+      <ion-col>
+          <ion-img src="./assets/images/Exposiciones.png" style="height: 100px"></ion-img>
+          <p class="texto-columna">Exposiciones</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <ion-img src="./assets/images/Talleres.png" style="height: 100px"></ion-img>
+          <p class="texto-columna">Talleres</p>
+      </ion-col>
+
+      <ion-col>
+          <div class="espacio-logotipo">
+            <p class="texto-logotipo">Espacio para el ícono</p>
+          </div>
+          <p class="texto-columna">Presentaciones editoriales</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <ion-img src="./assets/images/Proyecciones.png" style="height: 100px"></ion-img>
+          <p class="texto-columna">Proyecciones</p>
+      </ion-col>
+
+      <ion-col>
+          <ion-img src="./assets/images/PresentacionesArtisticas.png" style="height: 100px"></ion-img>
+          <p class="texto-columna">Presentaciones Artísticas</p>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+
+  <div class="falso-footer">
+    <p class="texto-footer">Programa</p>
+  </div>
 
 </ion-content>

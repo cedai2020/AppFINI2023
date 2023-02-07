@@ -1,9 +1,38 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>nosotros</ion-title>
-  </ion-toolbar>
+  <div class="barra-verde"></div>
+  <div class="barra-gris"></div>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+  <ion-row>
+    <div class="espacio-logotipo">
+      <p class="texto-logotipo">Logotipo FINI</p>
+    </div>
+  </ion-row>
+
+  <ion-row>
+    <p class="texto-festival">Festival Internacional de la Imagen</p>
+  </ion-row>
+
+  <ion-row>
+    <div class="contenedor-texto">
+      <p class="texto-contenido">Descripción de la FINI</p>
+    </div>
+  </ion-row>
+
+  <ion-row class="redes-sociales">
+    <ion-img src="./assets/images/youtube.png" style="width: 40px; margin: 5px;"></ion-img>
+    <ion-img src="./assets/images/instagram.png" style="width: 40px; margin: 5px;"></ion-img>
+    <ion-img src="./assets/images/facebook.png" style="width: 40px; margin: 5px;"></ion-img>
+    <p class="texto-web">/finimx</p>
+  </ion-row>
+
+</ion-grid>
+
+  <div class="falso-footer">
+    <p class="texto-footer">Nosotros</p>
+  </div>
 
 </ion-content>

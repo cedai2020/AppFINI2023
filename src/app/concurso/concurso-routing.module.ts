@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ConcursoPage
+  },
+  {
+    path: 'tecnicas',
+    loadChildren: () => import('./tecnicas/tecnicas.module').then( m => m.TecnicasPageModule)
   }
 ];
 

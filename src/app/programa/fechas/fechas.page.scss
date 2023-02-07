@@ -12,26 +12,12 @@
     box-shadow: none;
   }
   
-  .espacio-logotipo {
-    height: 120px;
-    width: 120px;
-    border: 1px solid black;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    margin-top: 30px;
-  }
-  
-  .espacio-logotipo .texto-logotipo {
-    text-align: center;
-    margin-top: 30%;
-  }
-  
   .texto-columna {
     text-align: center;
   }
   
   .primera-columna {
-    margin-top: 30px;
+    margin-top: 25px;
   }
   
   .falso-footer {
@@ -49,16 +35,3 @@
     font-weight: bold;
     font-size: large;
   }
-
-  .imagen-medio {
-    margin-left: 50%;
-    transform:translateX(-50%);
-}
-
-.azul {
-    color: #146aa8;
-}
-
-.gris {
-    color: #575756;
-}

@@ -1,0 +1,83 @@
+.barra-verde {
+    width: auto;
+    height: 30px;
+    background-color: #B6CC3B;
+    box-shadow: none;
+  }
+  
+  .barra-gris {
+    width: auto;
+    height: 30px;
+    background-color: #575756;
+    box-shadow: none;
+  }
+  
+  .espacio-logotipo {
+    height: 120px;
+    width: 120px;
+    border: 1px solid black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+  }
+  
+  .espacio-logotipo .texto-logotipo {
+    text-align: center;
+    margin-top: 30%;
+  }
+  
+  .texto-columna {
+    text-align: center;
+  }
+  
+  .primera-columna {
+    margin-top: 30px;
+  }
+  
+  .falso-footer {
+    width: 100%;
+    height:80px;
+    background-color: #FFCC00;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  
+  .falso-footer .texto-footer {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .texto-festival {
+    color: #B6CC3B;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: larger;
+  }
+
+  .contenedor-texto {
+    width: 100%;
+    height: 300px;
+    margin: 0 20px 0 20px;
+    border: 1px solid black;
+  }
+
+  .texto-contenido {
+    text-align: center;
+    margin-top: 40%;
+  }
+
+  .redes-sociales {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .texto-web {
+    color: #575756;
+    padding-left: 10px;
+    font-size: xx-large;
+  }

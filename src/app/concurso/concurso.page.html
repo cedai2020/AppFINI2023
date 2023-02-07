@@ -1,9 +1,27 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>concurso</ion-title>
-  </ion-toolbar>
+  <div class="barra-verde"></div>
+  <div class="barra-gris"></div>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row class="primera-columna">
+      <ion-col class="columna">
+          <ion-img src="./assets/images/Profesional_b.png" style="height: 120px"></ion-img>
+          <p class="texto-columna">Profesional</p>
+      </ion-col>
+
+      <ion-col>
+          <ion-img src="./assets/images/Estudiante_b.png" style="height: 120px"></ion-img>
+          <p class="texto-columna">Estudiante</p>
+      </ion-col>
+    </ion-row>
+
+</ion-grid>
+
+  <div class="falso-footer">
+    <p class="texto-footer">Programa</p>
+  </div>
 
 </ion-content>

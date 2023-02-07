@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ArtistasInvitadosPage
+  },
+  {
+    path: 'artista',
+    loadChildren: () => import('./artista/artista.module').then( m => m.ArtistaPageModule)
   }
 ];
 
