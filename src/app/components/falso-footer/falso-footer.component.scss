@@ -1,0 +1,21 @@
+.falso-footer {
+    width: 100%;
+    height:80px;
+    background-color: #FFCC00;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  
+  .falso-footer .texto-footer {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .contenedor-flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }

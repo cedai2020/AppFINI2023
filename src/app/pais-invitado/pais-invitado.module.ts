@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PaisInvitadoPageRoutingModule } from './pais-invitado-routing.module';
 
 import { PaisInvitadoPage } from './pais-invitado.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PaisInvitadoPageRoutingModule
+    PaisInvitadoPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [PaisInvitadoPage]
 })

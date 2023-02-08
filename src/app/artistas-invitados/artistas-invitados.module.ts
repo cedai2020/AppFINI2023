@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ArtistasInvitadosPageRoutingModule } from './artistas-invitados-routing.module';
 
 import { ArtistasInvitadosPage } from './artistas-invitados.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ArtistasInvitadosPageRoutingModule
+    ArtistasInvitadosPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ArtistasInvitadosPage]
 })

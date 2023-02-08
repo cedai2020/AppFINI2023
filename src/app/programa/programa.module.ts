@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ProgramaPageRoutingModule } from './programa-routing.module';
 
 import { ProgramaPage } from './programa.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProgramaPageRoutingModule
+    ProgramaPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ProgramaPage]
 })

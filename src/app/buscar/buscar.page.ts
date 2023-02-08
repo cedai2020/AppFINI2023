@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-buscar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscarPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  irInicio() {
+    this.router.navigate(['/home'])
   }
 
 }

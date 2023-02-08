@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ConcursoPageRoutingModule } from './concurso-routing.module';
 
 import { ConcursoPage } from './concurso.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConcursoPageRoutingModule
+    ConcursoPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ConcursoPage]
 })
