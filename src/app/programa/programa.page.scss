@@ -1,15 +1,14 @@
-.barra-verde {
-    width: auto;
-    height: 30px;
+  .barra-verde {
+    width: 100%;
+    height: 60px;
     background-color: #B6CC3B;
-    box-shadow: none;
+    position: absolute;
+    top: 0%;
   }
-  
-  .barra-gris {
-    width: auto;
-    height: 30px;
-    background-color: #575756;
-    box-shadow: none;
+
+  .barra-verde .titulo {
+    text-align: center;
+    margin-top: 6%;
   }
   
   .espacio-logotipo {
@@ -29,27 +28,39 @@
   }
   
   .primera-columna {
-    margin-top: 30px;
-  }
-  
-  .falso-footer {
-    width: 100%;
-    height:80px;
-    background-color: #FFCC00;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-  }
-  
-  .falso-footer .texto-footer {
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-    font-size: large;
+    margin-top: 20%;
   }
 
   .contenedor-flex {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
+  }
+
+  .texto-footer {
+    color: #ffffff;
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    z-index: 30;
+    transform: translateX(-50%);
+    font-weight: bold;
+  }
+
+  .barra-gris {
+    width: 100%;
+    height: 20px;
+    background-color: #575756;
+    box-shadow: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .barra-naranja  {
+    width: 100%;
+    height: 50px;
+    background-color: #EE8D24;
+    box-shadow: none;
+    position: absolute;
+    bottom: 20px;
   }

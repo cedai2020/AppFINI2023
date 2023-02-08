@@ -1,13 +1,14 @@
 <ion-header>
-  <div class="barra-verde"></div>
-  <div class="barra-gris"></div>
+  <div class="barra-verde ">
+    <p class="titulo">FESTIVAL INTERNACIONAL DE LA IMAGEN</p>
+  </div>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
 <ion-grid>
   
-  <ion-row>
+  <ion-row class="primera-columna">
     <ion-col>
       <ion-card>
         <ion-img src="./assets/images/avatar.png" style="width: 40px" class="imagen-medio"></ion-img>
@@ -76,5 +77,11 @@
 </ion-grid>
 
 <app-falso-footer></app-falso-footer>
+
+<div class="footer">
+  <div class="barra-gris"></div>
+  <p class="texto-footer">ARTISTAS <br>INVITADOS</p>
+  <div class="barra-naranja"></div>
+</div>
 
 </ion-content>

@@ -31,21 +31,42 @@
 }
 
 .primera-columna {
-  margin-top: 30px;
+  margin-top: 130px;
 }
 
-.falso-footer {
-  width: 100%;
-  height:80px;
-  background-color: #FFCC00;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-
-.falso-footer .texto-footer {
+.texto-footer {
   color: #ffffff;
-  text-align: center;
+  position: absolute;
+  bottom: 19px;
+  left: 50%;
+  z-index: 30;
+  transform: translateX(-50%);
   font-weight: bold;
-  font-size: large;
+}
+
+.barra-gris {
+  width: 100%;
+  height: 20px;
+  background-color: #575756;
+  box-shadow: none;
+  position: absolute;
+  bottom: 0;
+}
+
+.barra-naranja  {
+  width: 100%;
+  height: 50px;
+  background-color: #B6CC3B;
+  box-shadow: none;
+  position: absolute;
+  bottom: 20px;
+}
+
+.home {
+  height: 40px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
 }
