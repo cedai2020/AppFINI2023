@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { Location } from "@angular/common";
 
 @Component({
   selector: 'app-falso-footer',
@@ -8,12 +9,16 @@ import { Router } from "@angular/router";
 })
 export class FalsoFooterComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private location: Location) { }
 
   ngOnInit() {}
 
   irHome() {
     this.router.navigate(['/home'])
+  }
+
+  irBack() {
+    this.location.back()
   }
 
 }
