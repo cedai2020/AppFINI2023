@@ -1,15 +1,14 @@
-.barra-verde {
-    width: auto;
-    height: 30px;
+  .barra-verde {
+    width: 100%;
+    height: 60px;
     background-color: #B6CC3B;
-    box-shadow: none;
+    position: absolute;
+    top: 0%;
   }
-  
-  .barra-gris {
-    width: auto;
-    height: 30px;
-    background-color: #575756;
-    box-shadow: none;
+
+  .barra-verde .titulo {
+    text-align: center;
+    margin-top: 6%;
   }
   
   .espacio-logotipo {
@@ -36,4 +35,32 @@
 
   .segunda-columna {
     margin-top: 20px;
+  }
+
+  .texto-footer {
+    color: #ffffff;
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    z-index: 30;
+    transform: translateX(-50%);
+    font-weight: bold;
+  }
+
+  .barra-gris {
+    width: 100%;
+    height: 20px;
+    background-color: #575756;
+    box-shadow: none;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .barra-naranja  {
+    width: 100%;
+    height: 50px;
+    background-color: #ED217C;
+    box-shadow: none;
+    position: absolute;
+    bottom: 20px;
   }
