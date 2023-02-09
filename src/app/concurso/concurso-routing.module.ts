@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'tecnicas',
     loadChildren: () => import('./tecnicas/tecnicas.module').then( m => m.TecnicasPageModule)
+  },
+  {
+    path: 'finipix',
+    loadChildren: () => import('./finipix/finipix.module').then( m => m.FinipixPageModule)
   }
 ];
 
