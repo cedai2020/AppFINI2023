@@ -4,7 +4,9 @@
   </div>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="prueba" >
+
+  <div class="relativo">
 
   <ion-grid class="ion-no-padding ion-no-margin">
     <ion-row class="primera-columna">
@@ -24,15 +26,17 @@
         <p>Link para la transmisión</p>
       </div>
     </ion-row>
-
+   
 </ion-grid>
 
-<app-falso-footer></app-falso-footer>
-
-<div class="footer">
+<div class="footer"> 
+  <div class="barra-naranja">
+    <app-falso-footer></app-falso-footer>
+    <p class="texto-footer">GENERAL</p>
+  </div>
   <div class="barra-gris"></div>
-  <p class="texto-footer">ACTIVIDADES</p>
-  <div class="barra-naranja"></div>
+</div>
+
 </div>
 
 </ion-content>

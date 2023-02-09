@@ -6,6 +6,8 @@
 
 <ion-content [fullscreen]="true">
 
+  <div class="relativo">
+
   <ion-grid class="ion-no-padding ion-no-margin">
     
     <ion-row class="primera-columna">
@@ -18,12 +20,14 @@
 
   </ion-grid>
 
-  <app-falso-footer></app-falso-footer>
-
-  <div class="footer">
+  <div class="footer"> 
+    <div class="barra-naranja">
+      <app-falso-footer></app-falso-footer>
+      <p class="texto-footer">FINIPIX</p>
+    </div>
     <div class="barra-gris"></div>
-    <p class="texto-footer">FINIPIX</p>
-    <div class="barra-naranja"></div>
   </div>
+
+</div>
 
 </ion-content>

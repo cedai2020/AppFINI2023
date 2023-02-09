@@ -6,6 +6,8 @@
 
 <ion-content [fullscreen]="true">
 
+  <div class="relativo">
+
   <ion-grid>
     <ion-row class="m-extra">
       <ion-col class="columna">
@@ -47,7 +49,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="primera-columna">
+    <ion-row class="primera-columna m-b">
       <ion-col>
         <ion-img src="./assets/images/28.png" style="height: 100px" (click)="irActividades()"></ion-img>
       </ion-col>
@@ -55,12 +57,14 @@
     </ion-row>
 </ion-grid>
 
-<app-falso-footer></app-falso-footer>
-
-<div class="footer">
+<div class="footer"> 
+  <div class="barra-naranja">
+    <app-falso-footer></app-falso-footer>
+    <p class="texto-footer">GENERAL</p>
+  </div>
   <div class="barra-gris"></div>
-  <p class="texto-footer">PROGRAMA</p>
-  <div class="barra-naranja"></div>
+</div>
+
 </div>
 
 

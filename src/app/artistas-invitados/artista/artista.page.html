@@ -6,6 +6,8 @@
 
 <ion-content [fullscreen]="true">
 
+  <div class="relativo">
+
 <ion-grid class="ion-no-padding ion-no-margin">
 
   <ion-row class="primera-columna">
@@ -36,7 +38,7 @@
     </div>
   </ion-row>
 
-  <ion-row class="redes-sociales">
+  <ion-row class="redes-sociales m-b">
     <ion-img src="./assets/images/youtube.png" style="width: 40px; margin: 5px;"></ion-img>
     <ion-img src="./assets/images/instagram.png" style="width: 40px; margin: 5px;"></ion-img>
     <ion-img src="./assets/images/facebook.png" style="width: 40px; margin: 5px;"></ion-img>
@@ -44,11 +46,13 @@
   
 </ion-grid>
 
-<app-falso-footer></app-falso-footer>
-
-<div class="footer">
+<div class="footer"> 
+  <div class="barra-naranja">
+    <app-falso-footer></app-falso-footer>
+  </div>
   <div class="barra-gris"></div>
-  <div class="barra-naranja"></div>
+</div>
+
 </div>
 
 </ion-content>

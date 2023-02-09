@@ -6,8 +6,10 @@
 
 <ion-content [fullscreen]="true">
 
+  <div class="relativo">
+
   <ion-grid>
-  <ion-row class="primera-columna">
+  <ion-row class="primera-columna m-b">
     <ion-item class="contenedor">
       <ion-icon slot="start" name="search"></ion-icon>
       <ion-textarea placeholder="Buscar"></ion-textarea>
@@ -16,12 +18,14 @@
 
 </ion-grid>
 
-<app-falso-footer></app-falso-footer>
-
-<div class="footer">
+<div class="footer"> 
+  <div class="barra-naranja">
+    <app-falso-footer></app-falso-footer>
+    <p class="texto-footer">BUSCAR</p>
+  </div>
   <div class="barra-gris"></div>
-  <p class="texto-footer">BUSCAR</p>
-  <div class="barra-naranja"></div>
+</div>
+
 </div>
 
 </ion-content>

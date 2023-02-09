@@ -3,10 +3,13 @@
 
 <ion-content [fullscreen]="true">
 
+  <div class="relativo">
   <ion-grid class="ion-no-margin ion-no-padding">
   <ion-row>
     <ion-img src="./assets/images/cabezal.png"></ion-img>
   </ion-row>
+
+  
 
   <ion-row class="primera-columna">
     <ion-col class="columna">
@@ -32,7 +35,7 @@
     </ion-col>
   </ion-row>
 
-  <ion-row class="m-entref">
+  <ion-row class="m-entref m-b">
     <ion-col>
         <ion-img src="./assets/images/Nosotros.png" style="height: 100px" (click)="irNosotros()"></ion-img>
         <p class="texto-columna">NOSOTROS</p>
@@ -45,10 +48,13 @@
   </ion-row>
 </ion-grid>
 
-  <div class="footer">
-    <div class="barra-gris"></div>
-    <ion-img src="./assets/images/home.png" class="home"></ion-img>
-    <div class="barra-naranja"></div>
+<div class="footer"> 
+  <div class="barra-naranja">
+    <ion-img src="./assets/images/home.png" style="height: 40px; padding-top: 10px;"></ion-img>
   </div>
+  <div class="barra-gris"></div>
+</div>
+
+</div>
 
 </ion-content>

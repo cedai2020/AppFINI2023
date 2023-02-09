@@ -6,6 +6,8 @@
 
 <ion-content [fullscreen]="true">
 
+  <div class="relativo">
+
   <ion-grid>
     <ion-row class="primera-columna">
       <ion-col class="columna">
@@ -19,7 +21,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="segunda-columna">
+    <ion-row class="segunda-columna m-b">
       <ion-col>
           <ion-img src="./assets/images/Video_B.png" style="height: 100px" (click)="irConcursante()"></ion-img>
           <p class="texto-columna">VÍDEO <br>DOCUMENTAL</p>
@@ -33,12 +35,14 @@
 
 </ion-grid>
 
-<app-falso-footer></app-falso-footer>
-
-<div class="footer">
+<div class="footer"> 
+  <div class="barra-naranja">
+    <app-falso-footer></app-falso-footer>
+    <p class="texto-footer">ESTUDIANTE</p>
+  </div>
   <div class="barra-gris"></div>
-  <p class="texto-footer">ESTUDIANTE</p>
-  <div class="barra-naranja"></div>
+</div>
+
 </div>
 
 </ion-content>

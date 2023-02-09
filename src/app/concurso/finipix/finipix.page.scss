@@ -38,12 +38,9 @@
 
 .texto-footer {
   color: #ffffff;
-  position: absolute;
-  bottom: 19px;
-  left: 50%;
-  z-index: 30;
-  transform: translateX(-50%);
-  font-weight: bold;
+  position: relative;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .barra-gris {
@@ -51,8 +48,7 @@
   height: 20px;
   background-color: #575756;
   box-shadow: none;
-  position: absolute;
-  bottom: 0;
+  position: relative;
 }
 
 .barra-naranja  {
@@ -60,6 +56,17 @@
   height: 50px;
   background-color: #EE8D24;
   box-shadow: none;
+  position: relative;
+}
+
+.footer {
   position: absolute;
-  bottom: 20px;
-}  
+  bottom: 0;
+  width: 100%;
+}
+
+.relativo {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}

@@ -6,6 +6,8 @@
 
 <ion-content [fullscreen]="true">
 
+  <div class="relativo">
+
   <ion-grid>
     <ion-row class="primera-columna">
       <ion-col class="columna">
@@ -43,7 +45,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="m-entref">
+    <ion-row class="m-entref" class="m-b">
       <ion-col>
           <ion-img src="./assets/images/Proyecciones.png" style="height: 100px" (click)="irFechas()"></ion-img>
           <p class="texto-columna">PROYECCIONES</p>
@@ -56,12 +58,14 @@
     </ion-row>
 </ion-grid>
 
-<app-falso-footer></app-falso-footer>
-
-<div class="footer">
+<div class="footer"> 
+  <div class="barra-naranja">
+    <app-falso-footer></app-falso-footer>
+    <p class="texto-footer">PROGRAMA</p>
+  </div>
   <div class="barra-gris"></div>
-  <p class="texto-footer">PROGRAMA</p>
-  <div class="barra-naranja"></div>
+</div>
+
 </div>
 
 

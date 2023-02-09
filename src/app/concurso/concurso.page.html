@@ -6,6 +6,8 @@
 
 <ion-content [fullscreen]="true">
 
+  <div class="relativo">
+
   <ion-grid>
     <ion-row class="primera-columna">
       <ion-col class="columna">
@@ -19,7 +21,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <ion-row class="m-b">
       <ion-col>
         <ion-img src="./assets/images/FINIkids.png" style="height: 120px" (click)="irFinipix()"></ion-img>
         <p class="texto-columna">FINIPIX</p>
@@ -29,12 +31,14 @@
 
 </ion-grid>
 
-<app-falso-footer></app-falso-footer>
-
-<div class="footer">
+<div class="footer"> 
+  <div class="barra-naranja">
+    <app-falso-footer></app-falso-footer>
+    <p class="texto-footer">PROGRAMA</p>
+  </div>
   <div class="barra-gris"></div>
-  <p class="texto-footer">CONCURSO</p>
-  <div class="barra-naranja"></div>
+</div>
+
 </div>
 
 </ion-content>
