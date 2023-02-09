@@ -28,10 +28,11 @@
 
 .texto-columna {
   text-align: center;
+  font-size: small;
 }
 
 .primera-columna {
-  margin-top: 130px;
+  margin-top: 40px;
 }
 
 .texto-footer {
@@ -69,4 +70,8 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 30;
+}
+
+.m-entref {
+  margin-top: 20px;
 }

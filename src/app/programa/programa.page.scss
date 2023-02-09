@@ -25,6 +25,7 @@
   
   .texto-columna {
     text-align: center;
+    font-size: small;
   }
   
   .primera-columna {
@@ -63,4 +64,8 @@
     box-shadow: none;
     position: absolute;
     bottom: 20px;
+  }
+
+  .m-entref {
+    margin-top: 10px;
   }

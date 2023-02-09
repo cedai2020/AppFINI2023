@@ -234,3 +234,12 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+@font-face {
+  font-family: 'Helvetica Now Micro Bold';
+  src: url('../assets/fonts/HelveticaNowMicro-Light.woff2') format('woff2');
+}
+
+*{
+  font-family: 'Helvetica Now Micro Bold', sans-serif;
+}

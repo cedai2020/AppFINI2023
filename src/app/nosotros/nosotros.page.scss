@@ -39,7 +39,7 @@
     width: 100%;
     font-weight: bold;
     margin-top: 40px;
-    font-size: larger;
+    font-size: medium;
   }
 
   .contenedor-texto {
@@ -92,3 +92,9 @@
     position: absolute;
     bottom: 20px;
   }  
+
+  .logon {
+    width: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }

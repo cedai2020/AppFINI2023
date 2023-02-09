@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-concurso',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConcursoPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  irTecnicas() {
+    this.router.navigate(['concurso/tecnicas'])
+  }
+
+  irFinipix() {
+    this.router.navigate(['concurso/finipix'])
   }
 
 }
