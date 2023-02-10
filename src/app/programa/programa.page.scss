@@ -8,13 +8,19 @@
 
   .barra-verde .titulo {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #ffffff;
   }
 
   @media (max-width: 375px) {
     .barra-verde .titulo {
       margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 304px) {
+    .barra-verde .titulo {
+      font-size: smaller;
     }
   }
   
@@ -36,7 +42,7 @@
   }
   
   .primera-columna {
-    margin-top: 20%;
+    margin-top: 80px;
   }
 
   .contenedor-flex {
@@ -86,4 +92,75 @@
 
   .m-b {
     margin-bottom: 100px;
+  }
+
+  .imagen {
+    height: 100px
+  }
+
+  @media (max-height: 812px) {
+    .imagen {
+      height: 70px;
+    }
+  
+    .primera-columna {
+      margin-top: 60px;
+    }
+  
+    .m-b {
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media (max-height: 724px) {
+    .imagen {
+      height: 50px;
+    }
+  
+    .texto-columna {
+      font-size: x-small; 
+    }
+  
+    .primera-columna {
+      margin-top: 40px;
+    }
+  
+    .m-b {
+      margin-bottom: 50px;
+    }
+  
+    .barra-naranja {
+      height: 30px;
+    }
+  
+    .home-icon {
+      height: 40px;
+      padding-bottom: 15px;
+    }
+  
+    .barra-gris {
+      height: 10px;
+    }
+  
+    .m-entref {
+      margin-top: 10px;
+    }
+  
+    .imagen-logo {
+      width: 100%;
+      height: 80%;
+    }
+
+    .texto-footer {
+      padding-top: 5px;
+    }
+
+    .barra-verde {
+      height: 30px;
+    }
+
+    .barra-verde .titulo {
+      font-size: small;
+    }
+  
   }

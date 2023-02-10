@@ -13,3 +13,15 @@
     right: 15%;
     z-index: 10;
   }
+
+  @media (max-height: 724px) {
+    .back {
+      height: 20px;
+      bottom: 5px;
+    }
+
+    .home {
+      height: 20px;
+      bottom: 5px;
+    }
+  }
