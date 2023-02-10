@@ -11,6 +11,12 @@
     margin-top: 20px;
     color: #ffffff;
   }
+
+  @media (max-width: 375px) {
+    .barra-verde .titulo {
+      margin-top: 10px;
+    }
+  }
   
   .espacio-logotipo {
     height: 100px;

@@ -13,7 +13,13 @@
 
   .barra-verde .titulo {
     text-align: center;
-    margin-top: 6%;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 375px) {
+    .barra-verde .titulo {
+      margin-top: 10px;
+    }
   }
   
   .texto-columna {

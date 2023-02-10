@@ -12,6 +12,12 @@
   color: #ffffff;
 }
 
+@media (max-width: 375px) {
+  .barra-verde .titulo {
+    margin-top: 10px;
+  }
+}
+
 .texto-columna {
   text-align: center;
   font-size: small;
