@@ -1,0 +1,1 @@
+export const URL_SERVICIOS = "http://200.57.52.85/fini2021/?c=fini&a=";

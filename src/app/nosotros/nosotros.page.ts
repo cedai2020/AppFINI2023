@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NosotrosService } from "./nosotros.service";
 
 @Component({
   selector: 'app-nosotros',
@@ -7,9 +8,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosPage implements OnInit {
 
-  constructor() { }
+  semblanza!:string;
+  sitio_web!:string;
+  contacto!:string;
+  youtube!:string;
+  instagram!:string;
+  facebook!:string;
+  twitter!:string;
+
+  constructor(private ws: NosotrosService) { }
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter() {
+    this.ws.obtenerNosotros()
+      .subscribe(
+        (data:any)=> { 
+          this.semblanza = data[0]['semblanza']; 
+          this.sitio_web = data[0]['sitio_web']; 
+          this.contacto = data[0]['contacto']; 
+          this.youtube = data[0]['youtube']; 
+          this.instagram = data[0]['instagram']; 
+          this.facebook = data[0]['facebook']; 
+          this.twitter = data[0]['twitter']; 
+        },
+        (error)=> { console.log(error); }
+      )
   }
 
 }
