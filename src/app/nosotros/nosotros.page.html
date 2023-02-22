@@ -24,10 +24,10 @@
   </ion-row>
 
   <ion-row class="redes-sociales m-b">
-    <ion-img src="./assets/images/youtube.png" style="width: 40px; margin: 5px;"></ion-img>
-    <ion-img src="./assets/images/instagram.png" style="width: 40px; margin: 5px;"></ion-img>
-    <ion-img src="./assets/images/facebook.png" style="width: 40px; margin: 5px;"></ion-img>
-    <p class="texto-web">/finimx</p>
+    <ion-img src="./assets/images/youtube.png" style="width: 40px; margin: 5px;" (click)="abrirURL(this.youtube)"></ion-img>
+    <ion-img src="./assets/images/instagram.png" style="width: 40px; margin: 5px;" (click)="abrirURL(this.instagram)"></ion-img>
+    <ion-img src="./assets/images/facebook.png" style="width: 40px; margin: 5px;" (click)="abrirURL(this.facebook)"></ion-img>
+    <p class="texto-web" (click)="abrirURL(this.sitio_web)">/finimx</p>
   </ion-row>
 
 </ion-grid>

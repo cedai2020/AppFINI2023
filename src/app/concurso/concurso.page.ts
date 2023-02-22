@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { ConcursoService } from "./concurso.service";
 
 @Component({
   selector: 'app-concurso',

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NosotrosService } from "./nosotros.service";
+import { Browser } from "@capacitor/browser";
 
 @Component({
   selector: 'app-nosotros',
@@ -35,6 +36,11 @@ export class NosotrosPage implements OnInit {
         },
         (error)=> { console.log(error); }
       )
+  }
+
+  async abrirURL(direccion:any) {
+    const url = direccion
+    await Browser.open({url:url}) //Es necesario colocar en tsconfig.json en el apartado de "compilerOptions" la opción de "noPropertyAccessFromIndexSignature" en false
   }
 
 }

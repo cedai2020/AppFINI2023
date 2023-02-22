@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import {URL_SERVICIOS} from '../config/url_servicios';
 import { HttpClient } from "@angular/common/http";
+import {URL_SERVICIOS} from '../config/url_servicios';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NosotrosService {
+export class PaisInvitadoService {
 
   constructor(public http: HttpClient) { }
 
-  obtenerNosotros(){
-    return this.http.get( URL_SERVICIOS + "obtener_nosotros" );
+  obtenerPaisInvitado() {
+    return this.http.get(URL_SERVICIOS + "obtener_pais");
   }
+
 }
