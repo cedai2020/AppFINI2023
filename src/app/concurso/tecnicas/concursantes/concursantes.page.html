@@ -8,7 +8,7 @@
 
   <div class="relativo">
 
-  <ion-grid class="ion-no-padding ion-no-margin">
+  <!-- <ion-grid class="ion-no-padding ion-no-margin">
     <ion-row class="primera-columna">
       <div class="recuadro-azul-fuerte">
         <p><strong>Nombre Concursante</strong></p>
@@ -19,9 +19,21 @@
       <div class="recuadro-azul-claro">
         <p><strong>Nombre Concursante</strong></p>
       </div>
-    </ion-row>
+    </ion-row> -->
 
-</ion-grid>
+    <div class="primera_columna">
+      <div *ngFor="let concursante of concursantes; let impar = odd; let par = even; let last = last;" [ngClass]="{azul_fuerte:par,azul_claro:impar,mb:last}">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div><strong>{{concursante.nombreConcursante}}</strong></div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+  </div>
+
+
 
 <div class="footer"> 
   <div class="barra-naranja">

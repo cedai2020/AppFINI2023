@@ -11,30 +11,29 @@
 <ion-grid class="ion-no-padding ion-no-margin">
 
   <ion-row class="primera-columna">
-    <div class="bandera">
-      <p class="texto-bandera">Foto del Artista Invitado</p>
-    </div>
+      <ion-img src="http://200.57.52.85/fini2023/assets/artistas-invitados/{{artista.nombre_foto}}" style="width:100%"></ion-img>
   </ion-row>
   
   <ion-row>
-    <p class="texto-titulo">Nombre del Artista Invitado</p>
+    <p class="texto-titulo">{{artista.nombre}}</p>
   </ion-row>
 
   <ion-row>
-    <p class="texto-pih">Nacionalidad</p>
+    <p class="texto-pih">{{artista.nacionalidad}}</p>
   </ion-row>
 
   <ion-row>
     <div class="contenedor-texto">
       <p class="texto-contenido">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        {{artista.semblanza}}
       </p>
     </div> 
   </ion-row>
 
   <ion-row>
     <div class="texto-web">
-      <p>Sitio Web: <br>-</p>
+      <p>Sitio Web: </p>
+      <p>{{artista.sitio_web}}</p>
     </div>
   </ion-row>
 

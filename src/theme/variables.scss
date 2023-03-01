@@ -240,6 +240,11 @@
   src: url('../assets/fonts/HelveticaNowMicro-Light.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Helvetica Now Micro Light';
+  src: url('../assets/fonts/HelveticaNowMicro-Bold.woff2') format('woff2');
+}
+
 *{
   font-family: 'Helvetica Now Micro Bold', sans-serif;
 }

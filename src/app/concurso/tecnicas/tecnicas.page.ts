@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-tecnicas',
@@ -13,8 +14,13 @@ export class TecnicasPage implements OnInit {
   ngOnInit() {
   }
 
-  irConcursante() {
-    this.router.navigate(['/concurso/tecnicas/concursantes'])
+  irConcursante(tipo:any) {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        tipoConcurso: JSON.stringify(tipo)
+      }
+    }
+    this.router.navigate(['/concurso/tecnicas/concursantes'], navigationExtras)
   }
 
 }

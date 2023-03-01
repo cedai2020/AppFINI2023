@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router, NavigationExtras } from "@angular/router";
 
 @Component({
   selector: 'app-programa',
@@ -13,8 +13,13 @@ export class ProgramaPage implements OnInit {
   ngOnInit() {
   }
 
-  irFechas() {
-    this.router.navigate(['programa/fechas'])
+  irFechas(tipo:any) {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        tipoPrograma: JSON.stringify(tipo)
+      }
+    };
+    this.router.navigate(['programa/fechas'], navigationExtras)
   }
 
 }

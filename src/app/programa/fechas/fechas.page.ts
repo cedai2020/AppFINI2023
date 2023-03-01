@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router, ActivatedRoute, NavigationExtras } from "@angular/router";
 
 @Component({
   selector: 'app-fechas',
@@ -8,13 +8,29 @@ import { Router } from "@angular/router";
 })
 export class FechasPage implements OnInit {
 
-  constructor(private router: Router) { }
+  tipoPrograma:any
+
+  constructor(private router: Router, private route: ActivatedRoute) { 
+    this.route.queryParams.subscribe(params => {
+      if(params) {
+        this.tipoPrograma = JSON.parse(params['tipoPrograma'])
+      }
+      console.log("El tipo de programa a listar es: " + this.tipoPrograma)
+    });
+  }
 
   ngOnInit() {
   }
 
-  irActividades() {
-    this.router.navigate(['programa/fechas/actividades'])
+  irActividades(diaPrograma:any) {
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        diaPrograma: JSON.stringify(diaPrograma),
+        tipoPrograma: JSON.stringify(this.tipoPrograma)
+
+      }
+    }
+    this.router.navigate(['programa/fechas/actividades'], navigationExtras)
   }
 
 }

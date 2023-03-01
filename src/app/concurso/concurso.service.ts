@@ -10,6 +10,12 @@ export class ConcursoService {
   constructor(public http: HttpClient) { }
 
   obtenerConcurso( tipoConcurso:any ){
+    //console.log(URL_SERVICIOS + "obtener_concurso&tipo=" + tipoConcurso );
     return this.http.get( URL_SERVICIOS + "obtener_concurso&tipo=" + tipoConcurso);
+  }
+
+  obtenerImagenesConcursante( idconcurso:any ){
+    //console.log(URL_SERVICIOS + "obtener_imagenes_concursante&idconcurso=" + idconcurso );
+    return this.http.get( URL_SERVICIOS + "obtener_imagenes_concursante&idconcurso=" + idconcurso );
   }
 }

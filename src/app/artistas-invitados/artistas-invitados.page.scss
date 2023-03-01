@@ -38,7 +38,6 @@
     }
   }
   
-  
   .espacio-logotipo {
     height: 120px;
     width: 120px;
@@ -57,21 +56,26 @@
     text-align: center;
   }
   
-  .primera-columna {
+  .primera_columna {
     margin-top: 70px;
   }
 
-  .imagen-medio {
-    margin-left: 50%;
-    transform:translateX(-50%);
+  .imagen_medio {
+    height: 150px;
+    width: 100%;
+    max-height: 150px;
 }
 
 .azul {
     color: #146aa8;
+    padding-top: 10px;
+    font-size:small;
+    font-weight: bolder;
 }
 
 .gris {
     color: #575756;
+    padding-top: 5px;
 }
 
 .texto-footer {
@@ -109,7 +113,20 @@
   overflow: hidden;
 }
 
+.carta {
+  min-height: 250px;
+}
+
+.mb {
+  margin-bottom: 100px;
+}
+
 @media (max-height: 724px) {
+
+  .primera_columna {
+    margin-top: 40px;
+  }
+
   .barra-naranja {
     height: 30px;
   }

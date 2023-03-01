@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router, NavigationExtras} from '@angular/router'
+import {Plugins} from '@capacitor/core'
+const {Browser} = Plugins;
 
 @Component({
   selector: 'app-artista',
@@ -7,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistaPage implements OnInit {
 
-  constructor() { }
+  artista:any
+
+  constructor(private route: ActivatedRoute, public router: Router) {
+    this.route.queryParams.subscribe(params => {
+      if(params) {
+        this.artista = JSON.parse(params['artista'])
+      }
+    })
+
+   }
 
   ngOnInit() {
   }

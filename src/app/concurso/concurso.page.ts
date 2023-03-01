@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { ConcursoService } from "./concurso.service";
+import { NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-concurso',
@@ -14,8 +15,14 @@ export class ConcursoPage implements OnInit {
   ngOnInit() {
   }
 
-  irTecnicas() {
-    this.router.navigate(['concurso/tecnicas'])
+  irTecnicas(tipo:any) {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        tipoConcurso: JSON.stringify(tipo)
+      }
+    }
+
+    this.router.navigate(['concurso/tecnicas'], navigationExtras)
   }
 
   irFinipix() {

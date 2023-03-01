@@ -8,15 +8,66 @@
 
   <div class="relativo">
 
-  <ion-grid>
-  <ion-row class="primera-columna m-b">
+<ion-grid class="ion-no-margin ion-no-padding">
+  <ion-row class="primera-columna ">
     <ion-item class="contenedor">
-      <ion-icon slot="start" name="search"></ion-icon>
-      <ion-textarea placeholder="Buscar"></ion-textarea>
+      <ion-searchbar placeholder="Buscar" animated (ionChange)="verificar_texto()" [(ngModel)]="inputValue"></ion-searchbar>
     </ion-item>
   </ion-row>
-
 </ion-grid>
+
+<div *ngIf="divdata">
+
+  <div *ngIf="divdataprograma">
+    <ion-list>
+      <ion-list-header>
+        Programa
+      </ion-list-header>
+
+      <ion-item *ngFor="let programa of programas; let last = last" style="padding-left: 5%;" [ngClass]="{mb:last}">
+        <ion-label>
+          <p>{{programa.nombre_evento}}</p>
+          <p>{{programa.fecha}}</p>
+          <p>{{programa.hora}}</p>
+        </ion-label>
+      </ion-item>
+
+    </ion-list>
+  </div>
+
+  <div *ngIf="divdataconcurso">
+    <ion-list>
+      <ion-list-header>
+        Concursantes
+      </ion-list-header>
+      <ion-item *ngFor="let concurso of concursos; let last = last;" style="padding-left: 5%;" [ngClass]="{mb:last}" (click)="irConcursante(concurso)">
+        <ion-label style="margin-bottom: 5%; margin-top: 5%;">
+          <p>{{concurso.nombreConcursante}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="divdataartistas">
+    <ion-list>
+      <ion-list-header>
+        Artistas Invitados
+      </ion-list-header>
+
+      <ion-item *ngFor="let artista of artistas; let last = last" [ngClass]="{mb:last}">
+        <ion-avatar slot="start">
+          <img src="{{this.url}}{{this.artista.nombre_foto}}">
+        </ion-avatar>
+        <ion-label style="padding-left: 5%;" (click)="irArtista(artista)">
+          <ion-label style="margin-bottom: 5%; margin-top: 5%">
+            <p>{{artista.nombre}}</p>
+          </ion-label>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</div>
 
 <div class="footer"> 
   <div class="barra-naranja">

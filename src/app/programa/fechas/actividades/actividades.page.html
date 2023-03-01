@@ -8,7 +8,7 @@
 
   <div class="relativo">
 
-  <ion-grid class="ion-no-padding ion-no-margin">
+  <!-- <ion-grid class="ion-no-padding ion-no-margin">
     <ion-row class="primera-columna">
       <div class="recuadro-azul-fuerte">
         <p><strong>Título Actividad</strong></p>
@@ -26,8 +26,25 @@
         <p>Link para la transmisión</p>
       </div>
     </ion-row>
-   
-</ion-grid>
+  </ion-grid> -->
+
+<div class="primera_columna">
+  <div *ngFor="let programa of programas; let impar = odd; let par = even; let last = last;" [ngClass]="{azul_fuerte:par, azul_claro:impar, mb:last}">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-no-margin ion-no-padding">
+            <p class="filas primer_titulo "><strong>{{programa.nombre_evento}}</strong></p>
+            <p class="filas">{{programa.fecha}}</p>
+            <p class="filas"><strong>{{programa.hora}}</strong></p>
+            <!-- eslint-disable-next-line @angular-eslint/template/eqeqeq -->
+            <p *ngIf="programa.enlace_transmision != '-'" class="filas">Ver la transmisión</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </div>
+</div>
+
+  
 
 <div class="footer"> 
   <div class="barra-naranja">
