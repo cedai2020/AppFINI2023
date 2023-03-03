@@ -193,6 +193,15 @@
         margin-top: 0;
       }
     }
+
+    @media (max-width: 420px) {
+      .texto-footer {
+        width: 110px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 10px;
+      }
+    }
   
   }
 

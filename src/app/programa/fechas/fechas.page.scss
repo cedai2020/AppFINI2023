@@ -201,6 +201,12 @@
         margin-top: 0;
       }
     }
+
+    @media (max-width: 480px) {
+      .texto-footer {
+        font-size: 10px;
+      }
+    }
   
   }
 
