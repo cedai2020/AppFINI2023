@@ -33,4 +33,14 @@ export class ConcursantesPage implements OnInit {
     )
   }
 
+  irDetalle(concursante:any) {
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        concursante: JSON.stringify(concursante),
+        tipoConcurso: JSON.stringify(this.tipoConcurso)
+      }
+    };
+    this.router.navigate(['/concurso/tecnicas/concursantes/detalle'], navigationExtras)
+  }
+
 }

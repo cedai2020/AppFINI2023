@@ -18,6 +18,7 @@ export class BuscarPage implements OnInit {
   divdataprograma:any
   divdataconcurso:any
   divdataartistas:any
+  divinvisible:any
   programas:any
   concursos:any
   artistas:any
@@ -32,18 +33,21 @@ export class BuscarPage implements OnInit {
   ngOnInit() {
     this.tipoBusqueda = 'programa'
     console.log(this.divdataartistas)
+    this.divinvisible = true
   }
 
   verificar_texto() {
     if(this.inputValue === '') {
       console.log("Está vacio")
       this.divdata = false
+      this.divinvisible = true
     } else {
       console.log("No está vacio")
       this.buscar_programa(this.inputValue)
       this.buscar_concurso(this.inputValue)
       this.buscar_artistas(this.inputValue)
       this.divdata = true
+      this.divinvisible = false
     }
   }
 

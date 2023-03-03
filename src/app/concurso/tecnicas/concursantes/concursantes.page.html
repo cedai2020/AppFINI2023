@@ -24,7 +24,7 @@
     <div class="primera_columna">
       <div *ngFor="let concursante of concursantes; let impar = odd; let par = even; let last = last;" [ngClass]="{azul_fuerte:par,azul_claro:impar,mb:last}">
         <ion-grid>
-          <ion-row>
+          <ion-row (click)="irDetalle(concursante)">
             <ion-col>
               <div><strong>{{concursante.nombreConcursante}}</strong></div>
             </ion-col>

@@ -1,0 +1,39 @@
+<ion-header>
+  <div class="barra-verde ">
+    <p class="titulo">FESTIVAL INTERNACIONAL DE LA IMAGEN</p>
+  </div>
+</ion-header>
+
+<ion-content>
+
+  <div class="relativo">
+
+
+  <ion-grid style="padding-bottom: 5%;" class="primera_columna">
+    <ion-row>
+      <ion-col *ngFor="let imagen of imagenesConcursante;" style="padding-top: 5%;" size="4.5" size-sm="4"  size-md="4" offset-xs="1"  offset-sm="2" offset-md="1.5">
+        <img src="{{this.url}}{{imagen.nombre_imagen}}" class="imagen">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="10" size-sm="10" size-md="10" offset-xs="1"  offset-sm="1" offset-md="1.5">
+        <h5 class="azul">{{datos.nivel}}</h5>
+        <h6>{{datos.nombreConcursante}} - {{datos.nacionalidad}}</h6>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+
+  <div class="footer"> 
+    <div class="barra-naranja">
+      <app-falso-footer></app-falso-footer>
+    </div>
+    <div class="barra-gris"></div>
+  </div>
+</div>
+
+</ion-content>

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router, NavigationExtras} from '@angular/router'
-import {Plugins} from '@capacitor/core'
-const {Browser} = Plugins;
+import { Browser } from "@capacitor/browser";
 
 @Component({
   selector: 'app-artista',
@@ -22,6 +21,12 @@ export class ArtistaPage implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  async abrirURL(direccion:any) {
+    console.log("Entro en la dirección: " + direccion)
+    const url = direccion
+    await Browser.open({url:url})
   }
 
 }
