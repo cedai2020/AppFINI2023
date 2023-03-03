@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router, ActivatedRoute } from "@angular/router";
 import { NavigationExtras } from '@angular/router';
 
 @Component({
@@ -9,7 +9,15 @@ import { NavigationExtras } from '@angular/router';
 })
 export class TecnicasPage implements OnInit {
 
-  constructor(private router: Router) { }
+  rama:any
+
+  constructor(private router: Router, private route: ActivatedRoute) {
+    this.route.queryParams.subscribe(params => {
+      if(params) {
+        this.rama = JSON.parse(params['tipoConcurso'])
+      }
+    })
+   }
 
   ngOnInit() {
   }

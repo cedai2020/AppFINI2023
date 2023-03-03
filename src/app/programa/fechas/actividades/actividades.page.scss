@@ -12,6 +12,15 @@
     color: #ffffff;
   }
 
+  @media (max-width: 480px) {
+    .texto-footer {
+      width: 140px;
+      margin-left: 50%;
+      transform: translateX(-50%); 
+      font-size: small;
+    }
+  }
+
   @media (min-width: 375px) {
     .barra-verde .titulo {
       margin-top: 10px;

@@ -18,6 +18,15 @@
     }
   }
 
+  @media (max-width: 480px) {
+    .texto-footer {
+      width: 140px;
+      margin-left: 50%;
+      transform: translateX(-50%); 
+      font-size: small;
+    }
+  }
+
   @media (max-width: 376px) {
     .barra-verde .titulo {
       font-size: small;

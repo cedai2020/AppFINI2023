@@ -31,6 +31,15 @@
     }
   }
 
+  @media (max-width: 420px) {
+    .texto-footer {
+      width: 110px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      font-size: small;
+    }
+  }
+
   @media (max-width: 316px) {
     .barra-verde .titulo {
       font-size: xx-small !important;
