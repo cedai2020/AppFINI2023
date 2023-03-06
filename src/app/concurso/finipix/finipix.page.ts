@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-finipix',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinipixPage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
+  }
+
+  irConcursantes() {
+    this.router.navigate(['concurso/finipix/concursantes'])
   }
 
 }

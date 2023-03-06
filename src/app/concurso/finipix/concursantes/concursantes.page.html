@@ -1,0 +1,49 @@
+<ion-header>
+  <div class="barra-verde ">
+    <p class="titulo">FESTIVAL INTERNACIONAL DE LA IMAGEN</p>
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="relativo">
+
+  <!-- <ion-grid class="ion-no-padding ion-no-margin">
+    <ion-row class="primera-columna">
+      <div class="recuadro-azul-fuerte">
+        <p><strong>Nombre Concursante</strong></p>
+      </div>
+    </ion-row>
+
+    <ion-row >
+      <div class="recuadro-azul-claro">
+        <p><strong>Nombre Concursante</strong></p>
+      </div>
+    </ion-row> -->
+
+    <div class="primera_columna">
+      <div *ngFor="let concursante of concursantes; let impar = odd; let par = even; let last = last;" [ngClass]="{azul_fuerte:par,azul_claro:impar,mb:last}"> 
+        <ion-grid>
+          <ion-row (click)="irDetalle(concursante)">
+            <ion-col>
+              <div><strong>{{concursante.nombreConcursante}}</strong></div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+
+
+<div class="footer"> 
+  <div class="barra-naranja">
+    <app-falso-footer></app-falso-footer>
+    <p class="texto-footer">DISPOSITIVOS <br>MÓVILES</p>
+  </div>
+  <div class="barra-gris"></div>
+</div>
+
+</div>
+
+
+</ion-content>

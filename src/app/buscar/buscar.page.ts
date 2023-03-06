@@ -98,11 +98,11 @@ export class BuscarPage implements OnInit {
   irConcursante(concursante:any) {
     const navigationExtras: NavigationExtras = {
       queryParams: {
-        concursantes: JSON.stringify(concursante),
-        tipoConcurso: JSON.stringify(concursante)
+        concursante: JSON.stringify(concursante),
+        tipoConcurso: JSON.stringify((concursante.nombre).toUpperCase())
       }
     }
-    this.router.navigate(['/concurso/tecnicas/concursantes'], navigationExtras)
+    this.router.navigate(['concurso/tecnicas/concursantes/detalle'], navigationExtras)
   }
 
   irArtista(artista:any) {

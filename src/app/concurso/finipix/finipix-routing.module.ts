@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: FinipixPage
+  },  {
+    path: 'concursantes',
+    loadChildren: () => import('./concursantes/concursantes.module').then( m => m.ConcursantesPageModule)
   }
+
 ];
 
 @NgModule({
